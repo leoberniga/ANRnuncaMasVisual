@@ -4,7 +4,7 @@
   "data": "data.json",
   "logo": {
     "file": "",
-    "link": "",
+    "link": "https://memetic.media/wp-content/uploads/2020/09/memeticlogopng.png",
     "text": "Leonardo Gómez Berniga"
   },
   "text": {
@@ -19,7 +19,7 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": false,
+    "groupSelectorAttribute": true,
     "hoverBehavior": "default"
   },
   "informationPanel": {
