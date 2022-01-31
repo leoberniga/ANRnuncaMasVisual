@@ -24,7 +24,7 @@ jQuery.getJSON(GetQueryStringParams("config","config.json"), function(data, text
 	
 	if (config.type!="network") {
 		//bad config
-		alert("Invalid configuration settings.")
+		alert("Parametros de configuración inválidos.")
 		return;
 	}
 	
@@ -528,14 +528,14 @@ function nodeActive(a) {
 
 	if (groupByDirection) {
 		size=Object.size(mutual);
-		f.push("<h2>Mututal (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(mutual)) : f.push("No mutual links<br>");
+		f.push("<h2>Mutuos (" + size + ")</h2>");
+		(size>0)? f=f.concat(createList(mutual)) : f.push("Sin enlaces mutuos<br>");
 		size=Object.size(incoming);
-		f.push("<h2>Incoming (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(incoming)) : f.push("No incoming links<br>");
+		f.push("<h2>Entrada (" + size + ")</h2>");
+		(size>0)? f=f.concat(createList(incoming)) : f.push("Sin enlaces de entrada<br>");
 		size=Object.size(outgoing);
-		f.push("<h2>Outgoing (" + size + ")</h2>");
-		(size>0)? f=f.concat(createList(outgoing)) : f.push("No outgoing links<br>");
+		f.push("<h2>Salida (" + size + ")</h2>");
+		(size>0)? f=f.concat(createList(outgoing)) : f.push("Sin enlaces de salida<br>");
 	} else {
 		f=f.concat(createList(sigInst.neighbors));
 	}
@@ -580,7 +580,7 @@ function nodeActive(a) {
         $GP.info_data.html(e.join("<br/>"))
     }
     $GP.info_data.show();
-    $GP.info_p.html("Connections:");
+    $GP.info_p.html("Conecciones:");
     $GP.info.animate({width:'show'},350);
 	$GP.info_donnees.hide();
 	$GP.info_donnees.show();
